@@ -1,0 +1,1047 @@
+/* Site footer styles */
+                /* ===== 页脚 ===== */
+        .footer {
+            background: #0a0e27;
+            padding: 70px 0 30px;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .footer-inner {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 80px;
+        }
+
+        /* 页脚网格：5列 */
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 240px 140px 1fr 1.6fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+            align-items: start;
+        }
+
+        /* 品牌列 */
+        .footer-brand-col {
+            max-width: 240px;
+        }
+
+        .footer-brand-text {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.3);
+            line-height: 1.8;
+            margin-top: 16px;
+        }
+
+        /* ===== 列标题 ===== */
+        /* ===== 关于研盛 - 整列往右移 ===== */
+.footer-col-about {
+    margin-left: 20px;  /* 整列右移 */
+}
+
+.footer-col-about .footer-col-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 18px;
+    height: 24px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.footer-col-about a {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 6px;
+    transition: color 0.3s;
+    line-height: 1.8;
+    text-align: left;
+}
+.footer-col-about a:hover {
+    color: #5ac8c8;
+}
+
+        /* 产品中心 - 居中 */
+        .footer-col-product .footer-col-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 18px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        /* 解决方案 - 居中 */
+        .footer-col-solution .footer-col-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 18px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        /* 联系我们 - 左对齐 */
+        .footer-col-contact .footer-col-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 18px;
+            height: 24px;
+            line-height: 24px;
+            text-align: left;
+        }
+
+        /* ===== 关于研盛链接 - 左对齐 ===== */
+        .footer-col-about a {
+            display: block;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.3);
+            margin-bottom: 6px;
+            transition: color 0.3s;
+            line-height: 1.8;
+            text-align: left;
+        }
+        .footer-col-about a:hover {
+            color: #5ac8c8;
+        }
+
+        /* ===== 产品中心网格（2列 × 5行）- 居中 ===== */
+        .footer-product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 34px;
+            gap: 0 20px;
+            justify-items: center;
+            align-content: start;
+        }
+        .footer-product-grid a {
+            display: block;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.3);
+            transition: color 0.3s;
+            white-space: nowrap;
+            line-height: 1.8;
+            height: 34px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .footer-product-grid a:hover {
+            color: #5ac8c8;
+        }
+
+        /* ===== 解决方案网格（3列 × 5行）- 居中 ===== */
+        .footer-solution-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 34px;
+            gap: 0 16px;
+            justify-items: center;
+            align-content: start;
+        }
+        .footer-solution-grid a {
+            display: block;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.3);
+            transition: color 0.3s;
+            white-space: nowrap;
+            line-height: 1.8;
+            height: 34px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .footer-solution-grid a:hover {
+            color: #5ac8c8;
+        }
+
+        /* ===== 联系我们 - 左对齐 ===== */
+        .footer-col-contact {
+            text-align: left;
+        }
+
+        .footer-col-contact .contact-item {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 2.2;
+            text-align: left;
+        }
+
+        .footer-col-contact .contact-label {
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 4px;
+        }
+
+        .footer-col-contact .contact-value {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* ===== 页脚其他列链接 ===== */
+        .footer-col a {
+            display: block;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.3);
+            margin-bottom: 10px;
+            transition: color 0.3s;
+            line-height: 1.8;
+        }
+        .footer-col a:hover {
+            color: #5ac8c8;
+        }
+
+        .footer-col-contact .footer-mail {
+            display: inline;
+            margin: 0;
+            font-size: inherit;
+            color: inherit;
+            line-height: inherit;
+            text-decoration: none;
+        }
+
+        .footer-col-contact .footer-mail:hover {
+            color: #5ac8c8;
+        }
+
+        /* 底部版权栏 */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;      /* 保持换行，小屏自动折行 */
+    gap: 12px;
+}
+
+.footer-copy {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.2);
+    white-space: nowrap;  /* 强制不换行，保持在一行 */
+}
+
+.footer-copy a {
+    margin-left: 12px;
+    color: inherit;
+}
+
+.footer-copy a:hover {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-copy .footer-gongan {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 12px;
+    color: inherit;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.footer-copy .footer-gongan:hover {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-copy .footer-gongan__icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.footer-copy .footer-gongan__text {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 4px 16px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.25);
+    white-space: nowrap;  /* 强制不换行 */
+}
+
+.footer-sitemap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+a.badge.footer-sitemap__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+a.badge.footer-sitemap__link:hover {
+    color: #5ac8c8;
+    border-color: rgba(90, 200, 200, 0.25);
+    background: rgba(90, 200, 200, 0.06);
+}
+
+a.badge.footer-sitemap__link .fa-sitemap {
+    font-size: 11px;
+    color: rgba(90, 200, 200, 0.7);
+}
+        /* ================================================================ */
+        /* ===== 响应式：平板（≤ 1200px） ===== */
+        /* ================================================================ */
+        @media (max-width: 1200px) {
+            .footer-inner {
+                padding: 0 40px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+            }
+            .footer-brand-col {
+                max-width: 100%;
+                grid-column: 1 / -1;
+            }
+        }
+
+        /* ================================================================ */
+        /* ===== 响应式：平板（≤ 992px） ===== */
+        /* ================================================================ */
+        @media (max-width: 992px) {
+            .footer {
+                padding: 50px 0 25px;
+            }
+            .footer-inner {
+                padding: 0 30px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 30px 40px;
+            }
+            .footer-brand-col {
+                grid-column: 1 / -1;
+            }
+
+            .footer-product-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, 34px);
+                gap: 0 14px;
+                justify-items: center;
+                max-height: 210px;
+            }
+            .footer-product-grid a {
+                height: 34px;
+                font-size: 13px;
+                text-align: center;
+            }
+
+            .footer-solution-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, 34px);
+                gap: 0 14px;
+                justify-items: center;
+                max-height: 210px;
+            }
+            .footer-solution-grid a {
+                height: 34px;
+                font-size: 13px;
+                text-align: center;
+            }
+
+            /* 平板：所有标题居中 */
+            .footer-col-about .footer-col-title,
+            .footer-col-product .footer-col-title,
+            .footer-col-solution .footer-col-title,
+            .footer-col-contact .footer-col-title {
+                text-align: center;
+            }
+
+            .footer-col-about a {
+                text-align: center;
+            }
+
+            .footer-col-contact {
+                text-align: left;
+            }
+            .footer-col-contact .contact-item {
+                text-align: left;
+            }
+        }
+
+        /* ================================================================ */
+        /* ===== 响应式：手机（≤ 768px） ===== */
+        /* ================================================================ */
+        @media (max-width: 768px) {
+            .footer {
+                padding: 40px 0 20px;
+            }
+            .footer-inner {
+                padding: 0 20px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px 20px;
+                margin-bottom: 32px;
+            }
+            .footer-brand-col {
+                grid-column: 1 / -1;
+            }
+
+            .footer-product-grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: none;
+                grid-auto-rows: 34px;
+                gap: 0 10px;
+                justify-items: start;
+                max-height: none;
+            }
+            .footer-product-grid a {
+                height: 34px;
+                font-size: 13px;
+                text-align: left;
+            }
+
+            .footer-solution-grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: none;
+                grid-auto-rows: 34px;
+                gap: 0 10px;
+                justify-items: start;
+                max-height: none;
+            }
+            .footer-solution-grid a {
+                height: 34px;
+                font-size: 13px;
+                text-align: left;
+            }
+
+            .footer-col-about {
+                margin-left: 0;
+            }
+
+            .footer-col-about .footer-col-title,
+            .footer-col-product .footer-col-title,
+            .footer-col-solution .footer-col-title,
+            .footer-col-contact .footer-col-title {
+                text-align: left;
+                font-size: 14px;
+            }
+
+            .footer-col-about a {
+                text-align: left;
+            }
+
+            .footer-col-contact {
+                text-align: left;
+            }
+            .footer-col-contact .contact-item {
+                text-align: left;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+
+            .footer-copy {
+                white-space: normal;
+                line-height: 1.6;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-copy a {
+                display: block;
+                margin-left: 0;
+                margin-top: 4px;
+            }
+
+            .footer-copy .footer-gongan {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                margin-left: 0;
+                margin-top: 4px;
+            }
+
+            .footer-copy span.footer-gongan {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                margin-top: 4px;
+            }
+
+            .footer-copy .footer-gongan__text {
+                white-space: normal;
+            }
+
+        /* ================================================================ */
+        /* ===== 响应式：小手机（≤ 480px） ===== */
+        /* ================================================================ */
+        @media (max-width: 480px) {
+            .footer {
+                padding: 30px 0 15px;
+            }
+            .footer-inner {
+                padding: 0 14px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+                margin-bottom: 24px;
+            }
+            .footer-brand-col {
+                grid-column: 1;
+            }
+
+            .footer-product-grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: none;
+                grid-auto-rows: 30px;
+                gap: 0 8px;
+                justify-items: start;
+                max-height: none;
+            }
+            .footer-product-grid a {
+                height: 30px;
+                font-size: 12px;
+                text-align: left;
+                white-space: normal;
+            }
+
+            .footer-solution-grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: none;
+                grid-auto-rows: 30px;
+                gap: 0 8px;
+                justify-items: start;
+                max-height: none;
+            }
+            .footer-solution-grid a {
+                height: 30px;
+                font-size: 12px;
+                text-align: left;
+                white-space: normal;
+            }
+
+            .footer-col-about {
+                margin-left: 0;
+            }
+
+            .footer-col-about .footer-col-title,
+            .footer-col-product .footer-col-title,
+            .footer-col-solution .footer-col-title,
+            .footer-col-contact .footer-col-title {
+                text-align: left;
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+
+            .footer-col-about a {
+                text-align: left;
+            }
+
+            .footer-col-contact {
+                text-align: left;
+            }
+            .footer-col-contact .contact-item {
+                text-align: left;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                gap: 6px;
+                padding-top: 16px;
+            }
+
+            .footer-copy {
+                font-size: 11px;
+                white-space: normal;
+                line-height: 1.6;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            .badge {
+                font-size: 10px;
+                padding: 3px 12px;
+            }
+        }
+        }
+
+/* ===== 认证栏 - 圆形徽章（全站页脚） ===== */
+.cert-strip {
+    padding: 32px 60px;
+    background: #0a0e27;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.cert-grid {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 14px 28px;
+}
+
+.cert-grid img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+    transition: all 0.35s ease;
+}
+
+.cert-grid img:hover {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.15) translateY(-2px);
+    border-color: rgba(90, 200, 200, 0.35);
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 4px 20px rgba(90, 200, 200, 0.08);
+}
+
+@media (max-width: 992px) {
+    .cert-strip { padding: 24px 30px; }
+    .cert-grid { gap: 12px 20px; }
+    .cert-grid img { width: 46px; height: 46px; padding: 6px; }
+}
+
+@media (max-width: 576px) {
+    .cert-strip { padding: 18px 16px; }
+    .cert-grid { gap: 10px 14px; }
+    .cert-grid img { width: 38px; height: 38px; padding: 5px; }
+}
+
+/* ── 全站客户留言弹窗 ── */
+.contact-form-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 10050;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	box-sizing: border-box;
+}
+
+.contact-form-modal.is-open {
+	display: flex;
+}
+
+.contact-form-modal__backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(10, 14, 39, 0.55);
+}
+
+.contact-form-modal__dialog {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	max-width: 640px;
+	max-height: calc(100vh - 48px);
+	overflow: auto;
+	background: #ffffff;
+	border-radius: 24px;
+	border: 1px solid #e8eaf0;
+	padding: 36px 40px 40px;
+	box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+	box-sizing: border-box;
+	animation: contactFormModalIn 0.28s ease;
+}
+
+@keyframes contactFormModalIn {
+	from {
+		opacity: 0;
+		transform: translateY(12px) scale(0.98);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+.contact-form-modal__close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 36px;
+	height: 36px;
+	border: none;
+	border-radius: 50%;
+	background: #f0f4f5;
+	color: #666;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.2s, color 0.2s;
+	z-index: 2;
+}
+
+.contact-form-modal__close:hover {
+	background: #0a6e6e;
+	color: #fff;
+}
+
+.contact-form-modal .form-title,
+.contact-form-wrap .form-title {
+	font-size: 20px;
+	font-weight: 700;
+	color: #0a0e27;
+	margin: 0 40px 6px 0;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e0e4ea;
+}
+
+.contact-form-modal .form-body,
+.contact-form-wrap .form-body {
+	margin-top: 24px;
+}
+
+.contact-form-modal .form-group,
+.contact-form-wrap .form-group {
+	margin-bottom: 18px;
+}
+
+.contact-form-modal .form-group label,
+.contact-form-wrap .form-group label {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	color: #1a1a2e;
+	margin-bottom: 4px;
+}
+
+.contact-form-modal .form-group label .required,
+.contact-form-wrap .form-group label .required {
+	color: #e74c3c;
+	margin-left: 2px;
+}
+
+.contact-form-modal .form-group input,
+.contact-form-modal .form-group textarea,
+.contact-form-modal .form-group select,
+.contact-form-wrap .form-group input,
+.contact-form-wrap .form-group textarea,
+.contact-form-wrap .form-group select {
+	width: 100%;
+	padding: 12px 16px;
+	border: 1.5px solid #e0e4ea;
+	border-radius: 12px;
+	font-size: 15px;
+	font-family: inherit;
+	color: #1a1a2e;
+	background: #fafbfc;
+	transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.contact-form-modal .form-group select,
+.contact-form-wrap .form-group select {
+	padding-right: 40px;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23666888' d='M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+	background-size: 12px 8px;
+}
+
+.contact-form-modal .form-group input:focus,
+.contact-form-modal .form-group textarea:focus,
+.contact-form-modal .form-group select:focus,
+.contact-form-wrap .form-group input:focus,
+.contact-form-wrap .form-group textarea:focus,
+.contact-form-wrap .form-group select:focus {
+	border-color: #0a6e6e;
+	box-shadow: 0 0 0 4px rgba(10, 110, 110, 0.08);
+	background-color: #fff;
+}
+
+.contact-form-modal .form-group textarea,
+.contact-form-wrap .form-group textarea {
+	height: 120px;
+	resize: vertical;
+}
+
+.contact-form-modal .form-row,
+.contact-form-wrap .form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 18px;
+}
+
+.contact-form-modal .submit-btn,
+.contact-form-wrap .submit-btn {
+	width: 100%;
+	padding: 14px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 12px;
+	background: linear-gradient(135deg, #0a6e6e, #0a0e27);
+	transition: all 0.3s;
+	box-shadow: 0 4px 20px rgba(10, 110, 110, 0.25);
+	margin-top: 6px;
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+.contact-form-modal .submit-btn:hover,
+.contact-form-wrap .submit-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 30px rgba(10, 110, 110, 0.35);
+	filter: brightness(1.05);
+}
+
+body.contact-modal-open {
+	overflow: hidden;
+}
+
+/* 弹窗打开时，避免顶部 topbar / 吸顶导航盖住弹窗 */
+body.contact-modal-open .topbar,
+body.contact-modal-open #nav.nav,
+body.contact-modal-open .site-header .nav,
+body.contact-modal-open .float-side-dock {
+	z-index: 1;
+}
+
+@media (max-width: 768px) {
+	.contact-form-modal {
+		padding: 16px 12px;
+		padding-top: max(16px, env(safe-area-inset-top, 0px));
+		align-items: center;
+	}
+
+	.contact-form-modal__dialog {
+		padding: 24px 20px 28px;
+		border-radius: 20px;
+		max-height: calc(100vh - 32px - env(safe-area-inset-top, 0px));
+		max-height: calc(100dvh - 32px - env(safe-area-inset-top, 0px));
+	}
+
+	.contact-form-modal .form-row,
+	.contact-form-modal .form-body .form-row,
+	.contact-form-wrap .form-row {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Contact Form 7 嵌套样式 */
+.contact-form-wrap .wpcf7,
+.contact-form-modal .wpcf7 {
+	margin: 0;
+}
+
+.contact-form-wrap .wpcf7 form,
+.contact-form-modal .wpcf7 form {
+	margin: 0;
+}
+
+.contact-form-wrap .form-group > br,
+.contact-form-modal .form-group > br,
+.contact-form-wrap .wpcf7 br,
+.contact-form-modal .wpcf7 br {
+	display: none;
+}
+
+.contact-form-wrap .wpcf7 p,
+.contact-form-modal .wpcf7 p {
+	margin: 0;
+}
+
+.contact-form-wrap .wpcf7-form-control-wrap,
+.contact-form-modal .wpcf7-form-control-wrap {
+	display: block;
+	width: 100%;
+}
+
+.contact-form-wrap .wpcf7 input.wpcf7-form-control:not(.wpcf7-submit),
+.contact-form-wrap .wpcf7 textarea.wpcf7-form-control,
+.contact-form-wrap .wpcf7 select.wpcf7-form-control,
+.contact-form-modal .wpcf7 input.wpcf7-form-control:not(.wpcf7-submit),
+.contact-form-modal .wpcf7 textarea.wpcf7-form-control,
+.contact-form-modal .wpcf7 select.wpcf7-form-control {
+	width: 100%;
+	padding: 12px 16px;
+	border: 1.5px solid #e0e4ea;
+	border-radius: 12px;
+	font-size: 15px;
+	font-family: inherit;
+	color: #1a1a2e;
+	background: #fafbfc;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.contact-form-wrap .wpcf7 select.wpcf7-form-control,
+.contact-form-modal .wpcf7 select.wpcf7-form-control {
+	padding-right: 40px;
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23666888' d='M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+	background-size: 12px 8px;
+	background-color: #fafbfc;
+}
+
+.contact-form-wrap .wpcf7 textarea.wpcf7-form-control,
+.contact-form-modal .wpcf7 textarea.wpcf7-form-control {
+	height: 120px;
+	resize: vertical;
+}
+
+.contact-form-wrap .form-group--submit,
+.contact-form-modal .form-group--submit {
+	margin-bottom: 0;
+	margin-top: 6px;
+}
+
+.contact-form-wrap .wpcf7 input.wpcf7-submit,
+.contact-form-modal .wpcf7 input.wpcf7-submit,
+.contact-form-wrap .wpcf7 input.wpcf7-submit.submit-btn,
+.contact-form-modal .wpcf7 input.wpcf7-submit.submit-btn {
+	width: 100%;
+	height: auto;
+	padding: 14px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.4;
+	color: #fff !important;
+	border-radius: 12px;
+	background: linear-gradient(135deg, #0a6e6e, #0a0e27) !important;
+	border: none !important;
+	cursor: pointer;
+	box-shadow: 0 4px 20px rgba(10, 110, 110, 0.25);
+	margin: 0;
+	appearance: none;
+	-webkit-appearance: none;
+	transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+}
+
+.contact-form-wrap .wpcf7 input.wpcf7-submit:hover,
+.contact-form-modal .wpcf7 input.wpcf7-submit:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 30px rgba(10, 110, 110, 0.35);
+	filter: brightness(1.05);
+}
+
+.contact-form-wrap .wpcf7-not-valid-tip,
+.contact-form-modal .wpcf7-not-valid-tip {
+	font-size: 13px;
+	color: #e74c3c;
+	margin-top: 4px;
+}
+
+.contact-form-wrap .wpcf7-response-output,
+.contact-form-modal .wpcf7-response-output {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.contact-form-wrap .wpcf7 form.sent .wpcf7-response-output,
+.contact-form-wrap .wpcf7 form.failed .wpcf7-response-output,
+.contact-form-wrap .wpcf7 form.aborted .wpcf7-response-output,
+.contact-form-wrap .wpcf7 form.spam .wpcf7-response-output,
+.contact-form-wrap .wpcf7 form.invalid .wpcf7-response-output,
+.contact-form-modal .wpcf7 form.sent .wpcf7-response-output,
+.contact-form-modal .wpcf7 form.failed .wpcf7-response-output,
+.contact-form-modal .wpcf7 form.aborted .wpcf7-response-output,
+.contact-form-modal .wpcf7 form.spam .wpcf7-response-output,
+.contact-form-modal .wpcf7 form.invalid .wpcf7-response-output {
+	margin: 16px 0 0;
+	padding: 12px 14px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+}
+
+.contact-form-wrap .wpcf7-spinner,
+.contact-form-modal .wpcf7-spinner {
+	position: absolute;
+	margin: 0;
+}
+
+/* 手机端留言弹窗：仅缩小字段上下间距（放在文件末尾，避免被上方 CF7 样式覆盖） */
+@media (max-width: 768px) {
+	.contact-form-modal .form-body {
+		margin-top: 12px;
+	}
+
+	.contact-form-modal .form-row,
+	.contact-form-modal .form-body .form-row {
+		gap: 6px;
+	}
+
+	.contact-form-modal .form-group,
+	.contact-form-modal .form-body .form-group,
+	.contact-form-modal .wpcf7 .form-group {
+		margin-top: 0 !important;
+		margin-bottom: 10px !important;
+	}
+
+	.contact-form-modal .form-row > .form-group {
+		margin-bottom: 10px !important;
+	}
+
+	.contact-form-modal .form-row > .form-group:last-child {
+		margin-bottom: 6px !important;
+	}
+
+	.contact-form-modal .form-group label {
+		margin-bottom: 10px !important;
+		line-height: 1.3;
+	}
+
+	.contact-form-modal .form-group--submit {
+		margin-bottom: 0 !important;
+		margin-top: 2px !important;
+	}
+
+	.contact-form-modal .wpcf7 p {
+		margin: 0 !important;
+	}
+
+	.contact-form-modal .wpcf7-form-control-wrap {
+		margin: 0 !important;
+	}
+
+	.contact-form-modal .form-group textarea,
+	.contact-form-modal .wpcf7 textarea.wpcf7-form-control {
+		height: 88px !important;
+		min-height: 88px !important;
+	}
+}
+

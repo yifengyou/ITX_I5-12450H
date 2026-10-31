@@ -1,0 +1,271 @@
+/* 全局变量与基础重置 — 青绿工业色板 */
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* Brand palette */
+	--navy: #0a0e27;
+	--teal: #0a6e6e;
+	--teal-deep: #0a5e5e;
+	--cyan: #5ac8c8;
+	--gold: #d4af37;
+	--bg: #f0f4f5;
+	--surface: #f7f8fc;
+	--text: #1a1a2e;
+	--text-muted: #8888aa;
+	--text-soft: #aaaacc;
+
+	/* 兼容旧变量名（全站 layout / 内页沿用） */
+	--blue: #0a6e6e;
+	--blue-mid: #0a5e5e;
+	--blue-light: #e6f3f3;
+	--blue-pale: #f0f4f5;
+	--gray-dark: #1a1a2e;
+	--gray: #666688;
+	--gray-light: #8888aa;
+	--border: #e8eaf0;
+	--white: #FFFFFF;
+	--rule: #e8eaf0;
+}
+
+html {
+	/* clip 不创建滚动包含块，避免破坏导航 sticky */
+	overflow-x: clip;
+}
+
+body {
+	font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif;
+	color: var(--text);
+	background: var(--bg);
+	overflow-x: clip;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.6;
+}
+
+.inner {
+	max-width: 1400px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 40px;
+}
+
+@media (max-width: 1100px) {
+	.inner { padding: 0 28px; }
+}
+
+@media (max-width: 640px) {
+	.inner { padding: 0 20px; }
+}
+
+.s-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: var(--gold);
+	margin-bottom: 10px;
+}
+
+.s-tag::before {
+	content: '';
+	width: 20px;
+	height: 2px;
+	background: var(--gold);
+	flex-shrink: 0;
+}
+
+.s-title {
+	font-family: inherit;
+	font-weight: 800;
+	font-size: clamp(28px, 3.5vw, 44px);
+	color: var(--navy);
+	letter-spacing: 1px;
+	line-height: 1.2;
+}
+
+.s-title b {
+	color: var(--teal);
+	font-weight: 800;
+}
+
+.link-more {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	color: var(--teal);
+	text-decoration: none;
+	padding-bottom: 2px;
+	transition: gap .2s, transform .2s;
+}
+
+.link-more:hover {
+	gap: 14px;
+	transform: translateX(2px);
+}
+
+.reveal {
+	opacity: 0;
+	transform: translateY(22px);
+	transition: opacity .6s ease, transform .6s ease;
+}
+
+.reveal.in {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.site-main {
+	min-height: 40vh;
+}
+
+/* WordPress 编辑器图片 / 块对齐（经典编辑器 + 古腾堡） */
+.aligncenter,
+.wp-caption.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+	margin: 0.5em 1em 0.5em 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0.5em 0 0.5em 1em;
+}
+
+.wp-block-image.aligncenter,
+.wp-block-image.aligncenter > figure,
+figure.wp-block-image.aligncenter {
+	text-align: center;
+}
+
+.wp-block-image.aligncenter img,
+.wp-block-image .aligncenter img,
+figure.aligncenter img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-block-image.alignwide,
+.wp-block-image.alignfull {
+	max-width: none;
+}
+
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-right {
+	text-align: right;
+}
+
+.has-text-align-left {
+	text-align: left;
+}
+
+.wp-block-image figcaption,
+.wp-caption-text {
+	font-size: 14px;
+	color: var(--text-muted);
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+.wp-block-image::after,
+.news-content::after,
+.solution-content::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* 各编辑器正文区域：居中图片（覆盖详情页 img { width:100% } 等局部规则） */
+.news-content img.aligncenter,
+.news-content .aligncenter > img,
+.news-content .wp-block-image.aligncenter img,
+.news-content figure.aligncenter img,
+.news-content .has-text-align-center img,
+.solution-content img.aligncenter,
+.solution-content .aligncenter > img,
+.solution-content .wp-block-image.aligncenter img,
+.solution-content figure.aligncenter img,
+.solution-content .has-text-align-center img,
+.about-intro__body img.aligncenter,
+.about-intro__body .aligncenter > img,
+.about-intro__body .wp-block-image.aligncenter img,
+.about-intro__body figure.aligncenter img,
+.about-intro__body .has-text-align-center img,
+.about-center__content img.aligncenter,
+.about-center__content .aligncenter > img,
+.about-center__content .wp-block-image.aligncenter img,
+.about-center__content figure.aligncenter img,
+.about-center__content .has-text-align-center img,
+.specs-content img.aligncenter,
+.specs-content .aligncenter > img,
+.specs-content .wp-block-image.aligncenter img,
+.specs-content figure.aligncenter img,
+.specs-content .has-text-align-center img {
+	width: auto;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.news-content .wp-block-image.aligncenter,
+.news-content figure.aligncenter,
+.news-content figure.wp-block-image.aligncenter,
+.news-content .wp-caption.aligncenter,
+.solution-content .wp-block-image.aligncenter,
+.solution-content figure.aligncenter,
+.solution-content figure.wp-block-image.aligncenter,
+.solution-content .wp-caption.aligncenter,
+.about-intro__body .wp-block-image.aligncenter,
+.about-intro__body figure.aligncenter,
+.about-intro__body figure.wp-block-image.aligncenter,
+.about-intro__body .wp-caption.aligncenter,
+.about-center__content .wp-block-image.aligncenter,
+.about-center__content figure.aligncenter,
+.about-center__content figure.wp-block-image.aligncenter,
+.about-center__content .wp-caption.aligncenter,
+.specs-content .wp-block-image.aligncenter,
+.specs-content figure.aligncenter,
+.specs-content figure.wp-block-image.aligncenter,
+.specs-content .wp-caption.aligncenter {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+	max-width: 100%;
+}
